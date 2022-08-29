@@ -18,6 +18,14 @@ int add_numbers(int first_param, int second_param)
 	return sum;
 }
 
+// Function sums two integers
+// Our new function below let's us multiply two variables
+int multiply_numbers(int first_param, int second_param)
+{
+	int multiply = first_param * second_param;
+	return multiply;
+}
+
 #include <iostream>
 
 int main()
@@ -34,14 +42,18 @@ int main()
 	int num1 = 98;
 	int num2 = 74;
 	int result = add_numbers(num1, num2);
-	std::cout << "Our result: " << result << std::endl;
+	std::cout << "Our result (addition): " << result << std::endl;
 
 	// We can reuse our function
 	result = add_numbers(10, 19);
-	std::cout << "Our result: " << result << std::endl;
+	std::cout << "Our result (addition): " << result << std::endl;
 
 	// We can also call function directly in std::cout
-	std::cout << "Our result: " << add_numbers(84, 14) << std::endl;
+	std::cout << "Our result (addition): " << add_numbers(84, 14) << std::endl;
+
+	// we can reuse our result variable, becasue both functions return integers
+	result = multiply_numbers(13, 4);
+	std::cout << "Our result (multiplication): " << result << std::endl;
 
 	return 0;
 }
