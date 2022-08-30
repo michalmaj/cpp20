@@ -24,7 +24,7 @@ int main()
 	// print error
 	std::cerr << "std::cerr output: Something went wrong!" << std::endl;
 
-	// pring log message
+	// print log message
 	std::clog << "std::clog output: Some log message!" << std::endl;
 
 	// read data
