@@ -4,7 +4,7 @@
  */
 
 
-// Standard library header
+// Standard library header.
 // This header is part of the input/output library.
 #include <iostream>
 

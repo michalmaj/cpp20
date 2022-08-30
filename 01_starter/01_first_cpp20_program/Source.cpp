@@ -5,9 +5,9 @@ consteval int get_value()
 	return 47;
 }
 
-// the main function is a special function
+// The main function is a special function
 // it's a starting point of C++ program
-// so any valid program can only has ONE main function
+// so any valid program can only has ONE main function.
 int main()
 {
 	constexpr int value{ get_value() };

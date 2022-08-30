@@ -51,7 +51,7 @@ int main()
 	// We can also call function directly in std::cout
 	std::cout << "Our result (addition): " << add_numbers(84, 14) << std::endl;
 
-	// we can reuse our result variable, becasue both functions return integers
+	// we can reuse our result variable, because both functions return integers
 	result = multiply_numbers(13, 4);
 	std::cout << "Our result (multiplication): " << result << std::endl;
 

@@ -19,7 +19,7 @@ int main()
 	//std::cout << "Hello C++20!" << std::endl // comment out to skip this error
 
 	// Example of runtime error - out of bound for array
-	int arr[2]{ 1, 2 };
+	int arr[2]{ 1, 2 }; // example of an array
 	//std::cout << arr[-100000] << std::endl; // comment out to skip this error
 
 	// Example of warning error - it won't be a 0.5
