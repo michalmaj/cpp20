@@ -61,6 +61,14 @@ int main()
 	std::cout << "num1 >= num2: " << (num1 >= num2) << std::endl;
 	std::cout << "num1 <= num2: " << (num1 <= num2) << std::endl;
 
+	// we can store the comparison result in another variable
+	std::cout << std::endl;
+	std::cout << "Store comparison result in another variable:" << std::endl;
+
+	bool result = (num1 == num2);
+
+	std::cout << num1 << " == " << num2 << ": " << result << std::endl;
+
 
 	return 0;
 }
