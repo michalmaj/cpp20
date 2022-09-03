@@ -9,7 +9,7 @@ int main()
 	short int var1{ 10 }; // 2 bytes
 	short int var2{ 20 };
 
-	char var3{ 40 }; //1
+	char var3{ 40 }; //1 byte
 	char var4{ 50 };
 
 	std::cout << "size of var1 : " << sizeof(var1) << std::endl;
