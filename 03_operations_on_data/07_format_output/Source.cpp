@@ -174,6 +174,7 @@ int main()
 
 
     //different number systems : std::dec, std::hex, std::oct
+    //it only works with integral types
 
     int pos_int{ 717171 };
     int neg_int{ -47347 };
