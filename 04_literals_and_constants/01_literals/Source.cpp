@@ -1,6 +1,6 @@
 /*
- *Literal is data that is directly represented in code without going
- *through some other variable stored in memory.
+ * Literal is data that is directly represented in code without going
+ * through some other variable stored in memory.
  */
 
 #include <iostream>
@@ -9,7 +9,7 @@
 
 int main()
 {
-    //Literal types : u and l combinations for unsigned and long.
+    // Literal types : u and l combinations for unsigned and long.
     unsigned char unsigned_char{ 53u };// 555U would fail because of narrowing
 
     //2 Bytes
