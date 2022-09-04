@@ -3,6 +3,7 @@
  * but we can't change it values afterwards.
  * Using a const keyword will guarantee that the variable will never change
  * throughout the lifetime of your program.
+ * Declared constant must be initialized!
  */
 
 #include <iostream>
