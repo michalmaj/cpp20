@@ -30,6 +30,7 @@ int main()
 	// This operation (assignment) will cause an implicit narrowing conversion.
 	// y will be converted to int before assignment.
 	x = y;
+	// Value will be 45, decimal value will be chopped off
 	std::cout << "The value of x: " << x << std::endl;
 	// It will be int - 4 bytes
 	std::cout << "sizeof x: " << sizeof(x) << std::endl;
