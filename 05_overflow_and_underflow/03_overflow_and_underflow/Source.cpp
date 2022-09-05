@@ -5,7 +5,7 @@ int main()
 	// Overflow
 	unsigned char data{ 250 }; // 0~255 range
 
-	// If we increment over 255 we get an overflow
+	// If we increment over 255 we get an overflow.
 	++data;
 	std::cout << "data: " << static_cast<int>(data) << std::endl; // 251
 
