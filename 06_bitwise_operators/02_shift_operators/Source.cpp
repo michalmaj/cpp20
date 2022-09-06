@@ -18,11 +18,48 @@ int main()
 		<< ", value (dec): " << value << std::endl;
 
 	// Bit shifting is not supported for types that are smaller than 4 bytes.
-	// Variable val will be int, compiler will implicit cast from short int to in.
-	auto val = (value >> 1); // shift right by 1 bit
+	// Variable res will be int, compiler will implicit cast from short int to in.
+	auto res = (value >> 1); // shift right by 1 bit
 
 	// Checking type of the variable
-	std::cout << "Type of variable val is: " << typeid(val).name() << std::endl; // int
+	std::cout << "Type of variable res is: " << typeid(res).name() << std::endl; // int
+
+	// But we can explicit cast to short int.
+	value = static_cast<unsigned short int>(value << 1); // Shift left.
+	std::cout << "value (bin): " << std::bitset<16>(value)
+		<< ", value (dec): " << value << std::endl;
+
+	// Shift left by one once more
+	value = static_cast<unsigned short int>(value << 1); // Shift left.
+	std::cout << "value (bin): " << std::bitset<16>(value)
+		<< ", value (dec): " << value << std::endl;
+
+	// Shift left by one once more
+	value = static_cast<unsigned short int>(value << 1); // Shift left.
+	std::cout << "value (bin): " << std::bitset<16>(value)
+		<< ", value (dec): " << value << std::endl;
+
+	// Shift left by one once more (after next shit left, we will lose our data)
+	value = static_cast<unsigned short int>(value << 1); // Shift left.
+	std::cout << "value (bin): " << std::bitset<16>(value)
+		<< ", value (dec): " << value << std::endl;
+
+	// Shift left by one once more (we lost 1 bit)
+	value = static_cast<unsigned short int>(value << 1); // Shift left.
+	std::cout << "value (bin): " << std::bitset<16>(value)
+		<< ", value (dec): " << value << std::endl;
+
+	// We can't it back even using reverse operation (shift right).
+	// Once we are loosing our data  moving left or right, we are not able
+	// to bring this data back.
+	// Shift right once
+	value = static_cast<unsigned short int>(value >> 1); // Shift right.
+	std::cout << "value (bin): " << std::bitset<16>(value)
+		<< ", value (dec): " << value << std::endl;
+
+
+
+
 
 	return 0;
 }
