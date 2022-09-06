@@ -73,5 +73,9 @@ int main()
 		<< ", value (dec): " << value << std::endl;
 
 
+	// Rememebr if you want to print directly in std::cout, use parentheses
+	std::cout << "value: " << (value >> 1) << std::endl;
+
+
 	return 0;
 }
