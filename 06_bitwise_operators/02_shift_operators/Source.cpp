@@ -2,6 +2,15 @@
  * The bitwise shift operator expressions have two forms:
  *		1) lhs << rhs - left shift of lhs by rhs bits
  *		2) lhs >> rhs -	right shift of lhs by rhs bits
+ *
+ * As long as we don't lose our data due to shifting right or left, we can calculate
+ * our new value:
+ *		1) for left shift:
+ *			old_value * 2^n,
+ *			where n is number of shifting bits
+ *		2) for right shift
+ *			old_dat / 2^n,
+ *			where n is number of shifting bits
  */
 
 #include <iostream>
@@ -58,7 +67,10 @@ int main()
 		<< ", value (dec): " << value << std::endl;
 
 
-
+	// Shift multiple bits in one go
+	value = static_cast<unsigned short int>(value >> 4); // Shift right for 4 bits.
+	std::cout << "value (bin): " << std::bitset<16>(value)
+		<< ", value (dec): " << value << std::endl;
 
 
 	return 0;
