@@ -10,13 +10,13 @@ int main()
 	// Highlight position for bit of interest with a 1
 	// Mask other position with 0
 	const unsigned char mask_bit_0{ 0b00000001 }; // Bit0
-	const unsigned char mask_bit_1{ 0b00000010 }; // Bit0
-	const unsigned char mask_bit_2{ 0b00000100 }; // Bit0
-	const unsigned char mask_bit_3{ 0b00001000 }; // Bit0
-	const unsigned char mask_bit_4{ 0b00010000 }; // Bit0
-	const unsigned char mask_bit_5{ 0b00100000 }; // Bit0
-	const unsigned char mask_bit_6{ 0b01000000 }; // Bit0
-	const unsigned char mask_bit_7{ 0b10000000 }; // Bit0
+	const unsigned char mask_bit_1{ 0b00000010 }; // Bit1
+	const unsigned char mask_bit_2{ 0b00000100 }; // Bit2
+	const unsigned char mask_bit_3{ 0b00001000 }; // Bit3
+	const unsigned char mask_bit_4{ 0b00010000 }; // Bit4
+	const unsigned char mask_bit_5{ 0b00100000 }; // Bit5
+	const unsigned char mask_bit_6{ 0b01000000 }; // Bit6
+	const unsigned char mask_bit_7{ 0b10000000 }; // Bit7
 
 	// Sandbox variable
 	unsigned char var{ 0b00000000 }; // Starts off all bits off
