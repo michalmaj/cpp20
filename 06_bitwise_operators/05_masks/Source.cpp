@@ -110,6 +110,12 @@ int main()
 	std::cout << std::setw(COLUMN_WIDTH) << "var: " << std::setw(COLUMN_WIDTH)
 		<< std::bitset<8>(var) << std::endl;
 
+	// Toggle multiple bits
+	std::cout << "Toggle multiple bits in one go: the 4 higher bits" << std::endl;
+	var ^= (mask_bit_7 | mask_bit_6 | mask_bit_5 | mask_bit_4);
+	std::cout << std::setw(COLUMN_WIDTH) << "var: " << std::setw(COLUMN_WIDTH)
+		<< std::bitset<8>(var) << std::endl;
+
 
 	return 0;
 }
