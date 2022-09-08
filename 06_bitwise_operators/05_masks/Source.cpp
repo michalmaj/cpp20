@@ -93,6 +93,22 @@ int main()
 	std::cout << "bit7 is: " << ((var & mask_bit_7) >> 7) << std::endl;
 	std::cout << "bit7 is: " << static_cast<bool>(var & mask_bit_7) << std::endl;
 
+	// Toggle bits
+	// Toggle: var ^ mask
+
+	// Toggle bit 0
+	std::cout << std::endl;
+	std::cout << "Toggle bit 0" << std::endl;
+	var ^= mask_bit_0;
+	std::cout << std::setw(COLUMN_WIDTH) << "var: " << std::setw(COLUMN_WIDTH)
+		<< std::bitset<8>(var) << std::endl;
+
+	// Toggle bit 7
+	std::cout << std::endl;
+	std::cout << "Toggle bit 7" << std::endl;
+	var ^= mask_bit_7;
+	std::cout << std::setw(COLUMN_WIDTH) << "var: " << std::setw(COLUMN_WIDTH)
+		<< std::bitset<8>(var) << std::endl;
 
 
 	return 0;
