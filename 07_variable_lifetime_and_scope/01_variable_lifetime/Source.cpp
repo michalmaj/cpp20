@@ -7,6 +7,7 @@
 
 #include <iostream>
 
+
 int static_var2{ 80 }; // static duration - dies when program ends
 
 void some_function()
