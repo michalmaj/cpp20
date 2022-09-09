@@ -1,36 +1,39 @@
 #include <iostream>
 
+struct Tools
+{
+    const int Pen{ 10 };
+    const int Marker{ 20 };
+    const int Eraser{ 30 };
+    const int Rectangle{ 40 };
+    const int Circle{ 50 };
+    const int Ellipse{ 60 };
+};
 
-// Tools
-const int Pen{ 10 };
-const int Marker{ 20 };
-const int Eraser{ 30 };
-const int Rectangle{ 40 };
-const int Circle{ 50 };
-const int Ellipse{ 60 };
 
+int main()
+{
+    Tools tools;
+    
+    int tool{ tools.Pen };
 
-int main() {
-
-    int tool{ Eraser };
-
-    if (tool == Pen) {
+    if (tool == tools.Pen) {
         std::cout << "Active tool is pen" << std::endl;
         //Do the actual painting
     }
-    else if (tool == Marker) {
+    else if (tool == tools.Marker) {
         std::cout << "Active tool is Marker" << std::endl;
     }
-    else if (tool == Eraser) {
+    else if (tool == tools.Eraser) {
         std::cout << "Active tool is Eraser" << std::endl;
     }
-    else if (tool == Rectangle) {
+    else if (tool == tools.Rectangle) {
         std::cout << "Active tool is Rectangle" << std::endl;
     }
-    else if (tool == Circle) {
+    else if (tool == tools.Circle) {
         std::cout << "Active tool is Circle" << std::endl;
     }
-    else if (tool == Ellipse) {
+    else if (tool == tools.Ellipse) {
         std::cout << "Active tool is Ellipse" << std::endl;
     }
 
