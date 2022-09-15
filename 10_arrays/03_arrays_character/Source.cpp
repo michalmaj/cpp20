@@ -40,6 +40,17 @@ int main()
 	std::cout << "message4: " << message4 << std::endl;
 	std::cout << "sizeof(message4): " << sizeof(message4) << std::endl;
 
+	// This is not a C-string, as there is not null character
+	char message5[]{ 'H', 'e', 'l', 'l', 'o' };
+	std::cout << "message5: " << message5 << std::endl;
+	std::cout << "sizeof(message5): " << sizeof(message5) << std::endl;
+
+
+	// String literals, C++ add a null character for us
+	char message6[]{ "Hello" };
+	std::cout << "message6: " << message6 << std::endl;
+	std::cout << "sizeof(message6): " << sizeof(message6) << std::endl;
+
 
 	return 0;
 }
