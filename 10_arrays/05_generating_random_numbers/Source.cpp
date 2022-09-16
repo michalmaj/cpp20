@@ -50,5 +50,10 @@ int main()
 		std::cout << "random_num " << i << ": " << random_num << std::endl; // [1 ~ 10]
 	}
 
+	std::cout << "\n=====================================\n\n";
+
+	// Show RAND_MAX
+	std::cout << "RAND_MAX: " << RAND_MAX << std::endl;
+
 	return 0;
 }
