@@ -7,7 +7,7 @@ int main()
 	std::srand(std::time(nullptr)); // Seed
 
     char prediction0[]{ "a lot of kinds running in the backyard!" };
-    char prediction1[]{ "a lot of empty beer bootles on your work table." };
+    char prediction1[]{ "a lot of empty beer bottles on your work table." };
     char prediction2[]{ "you Partying too much with kids wearing weird clothes." };
     char prediction3[]{ "you running away from something really scary" };
     char prediction4[]{ "clouds gathering in the sky and an army standing ready for war" };
