@@ -33,7 +33,7 @@ int main()
     {
         std::cout << "Oh dear " << name << ", I see ";
 
-        size_t rand_num = static_cast<size_t>(std::rand() % 11);
+        size_t rand_num = static_cast<size_t>(std::rand() % std::size(predictions));
 
         std::cout << predictions[rand_num] << std::endl;
 
