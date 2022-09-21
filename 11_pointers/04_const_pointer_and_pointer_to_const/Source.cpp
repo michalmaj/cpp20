@@ -1,5 +1,9 @@
-#include <iostream>
+/*
+ * If const is on the left of * the data is const (can't modify the data).
+ * If const is on the right of * the pointer is const (can't point somewhere else).
+ */
 
+#include <iostream>
 
 
 int main()
