@@ -142,6 +142,8 @@ int main()
 	std::cout << "*p_number7: " << *p_number7 << std::endl; // 456
 
 	int number8{ 2928 };
+	std::cout << "Changing the address where p_number7 is pointing (Compile Error)." << std::endl;
+	//p_number7 = &number8; // Compiler Error
 
 	return 0;
 }
