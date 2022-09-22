@@ -81,6 +81,16 @@ int main()
 	for (size_t i{ std::size(scores) }; i > 0; --i)
 		std::cout << "Values: " << scores[i - 1] << std::endl;
 
+	std::cout << "\n==========================================\n\n";
+
+	p_score = scores;
+	scores[0] = 31; // Array index notation
+	*(scores + 1) = 32; // Equivalent to scores[1] = 32. Pointer arithmetic on array name
+	*(p_score + 2) = 33; // Equivalent to scores[2] == 33. Pointer arithmetic on p_score pointer
+	std::cout << "Printing out the array after modification of 3 first elements:" << std::endl;
+	for (size_t i{ 0 }; i < std::size(scores); ++i)
+		std::cout << "Value: " << scores[i] << std::endl;
+
  
 	return 0;
 }
