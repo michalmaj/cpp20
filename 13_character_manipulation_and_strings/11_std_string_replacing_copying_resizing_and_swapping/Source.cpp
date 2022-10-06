@@ -112,9 +112,9 @@ int main()
 	std::cout << "str_a : " << str_a << std::endl;
 	std::cout << "str_b : " << str_b << std::endl;
 	std::cout << "str_a.size() :" << str_a.size() << std::endl;
-	std::cout << "str_a.capaity() : " << str_a.capacity() << std::endl;
+	std::cout << "str_a.capacity() : " << str_a.capacity() << std::endl;
 	std::cout << "str_b.size() :" << str_b.size() << std::endl;
-	std::cout << "str_b.capaity() : " << str_b.capacity() << std::endl;
+	std::cout << "str_b.capacity() : " << str_b.capacity() << std::endl;
 
 	std::cout << "Swapping..." << std::endl;
 	str_a.swap(str_b);
@@ -123,9 +123,9 @@ int main()
 	std::cout << "str_a : " << str_a << std::endl;
 	std::cout << "str_b : " << str_b << std::endl;
 	std::cout << "str_a.size() :" << str_a.size() << std::endl;
-	std::cout << "str_a.capaity() : " << str_a.capacity() << std::endl;
+	std::cout << "str_a.capacity() : " << str_a.capacity() << std::endl;
 	std::cout << "str_b.size() :" << str_b.size() << std::endl;
-	std::cout << "str_b.capaity() : " << str_b.capacity() << std::endl;
+	std::cout << "str_b.capacity() : " << str_b.capacity() << std::endl;
 
 
 	return 0;
