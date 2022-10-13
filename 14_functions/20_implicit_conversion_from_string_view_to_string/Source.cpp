@@ -4,7 +4,7 @@ void process_name(std::string_view name_sv);
 
 int main() {
 
-    process_name("Daniel");
+    process_name("Paul");
 
     return 0;
 }
@@ -20,8 +20,8 @@ void process_name(std::string_view name_sv) {
     // from std::string_view
     // to std::string is not  allowed.
 
-//Fix : Be explicit about the conversion
-//say_my_name(std::string(name_sv));
+	//Fix : Be explicit about the conversion
+	say_my_name(std::string(name_sv));
 
 
 }
