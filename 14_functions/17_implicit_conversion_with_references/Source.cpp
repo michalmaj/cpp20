@@ -15,8 +15,8 @@ int main() {
 
     int data = double_var;
 
-    increment(data);
-    print_out(double_var);
+    increment(data); // Compiler Error if we try to pass double type variable
+    print_out(double_var); // Here only warning because parameter is marked as const
 
 
 
