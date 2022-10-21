@@ -27,7 +27,19 @@ int max(const int* numbers, const size_t count)
 	return maximum;
 }
 
+// Both functions above can be replaced by:
+template <class T, size_t N>
+T max(const T(&number)[N])
+{
+	T maximum = std::numeric_limits<T>::min();
 
+	for(const auto& e : number)
+	{
+		if (e > maximum)
+			maximum = e;
+	}
+	return maximum;
+}
 
 int main()
 {
@@ -36,5 +48,10 @@ int main()
 
 	auto result = max(ints, std::size(ints));
 	std::cout << "result : " << result << std::endl;
+
+	//  Call template function
+	auto result1 = max(doubles);
+	std::cout << "result1 : " << result1 << std::endl;
+
 	return 0;
 }
