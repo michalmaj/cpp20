@@ -27,8 +27,6 @@ int min(const int* const a, const int* const b) {
 
 int main()
 {
-
-
     int a{10};
     int b{12};
     const int c{30};
