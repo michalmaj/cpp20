@@ -1,5 +1,6 @@
 #include <iostream>
 
+// Both functions are good (in the eyes of compiler, there are different) - there is no redefinition
 int max(int& a, int& b) {
     std::cout << "max with int& called" << std::endl;
 
