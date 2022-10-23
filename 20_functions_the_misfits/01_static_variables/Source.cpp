@@ -15,7 +15,7 @@ unsigned int add_student()
 
 void do_something()
 {
-	//student_count--; // Copiler Error, because this variable is only available inside
+	//student_count--; // Compiler Error, because this variable is only available inside
 	//				 // add_student() function
 	++dog_count; // Works - it's global variable
 }
