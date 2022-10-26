@@ -1,5 +1,6 @@
 #include <iostream>
 #include <typeinfo>
+#include <variant>
 
 /*
 //Problematic : return depends on the order of the template arguments : BAD!
@@ -16,6 +17,7 @@ ReturnType   maximum(T a, P b) {
     return ((a > b) ? a : b);
 }
 
+
 int main()
 {
     int a{ 5 };
@@ -24,6 +26,7 @@ int main()
     auto result = maximum <int>(a, b);
     std::cout << "result: " << result << ", sizeof(result) : " << sizeof(result)
         << ", typeid: " << typeid(result).name() << std::endl;
+
 
 	return 0;
 }
