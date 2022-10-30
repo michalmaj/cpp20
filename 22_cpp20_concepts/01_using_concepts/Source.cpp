@@ -44,7 +44,7 @@
 //	return a + b;
 //}
 
-// Syntax 4:
+// Syntax 5:
 template <typename T>
 requires std::is_integral_v<T> // It's also possible to use type traits to set our requirements up 
 T add(T a, T b)
