@@ -11,7 +11,7 @@ concept TinyType = requires(T t)
 template<typename T>
 //requires std::integral<T> || std::floating_point<T> // You can only call this function with integer or floating point arguments.
 //requires std::integral<T> && TinyType<T>
-requires std::integral<T> and requires(T t)
+requires std::integral<T> and requires(T t) // Same as above
 {
 	sizeof(t) <= 4; // Simple requirement
 		requires sizeof(t) <= 4; // Nested requirement
