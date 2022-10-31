@@ -1,3 +1,15 @@
+/*
+ *	- Class member variables can either be raw stack variables or
+ *	  pointers.
+ *	- Members can't be references.
+ *	- Classes have function (methods) that let them do things.
+ *	- Class methods have access to the member variables, regardless
+ *	  or whether they are public or private.
+ *	- Private members of classes aren't accessible from the outside
+ *	  of the class definition.
+ *
+ */
+
 #include <iostream>
 #include <numbers>
 
