@@ -1,0 +1,31 @@
+#pragma once
+
+#include <iostream>
+#include <string>
+#include <string_view>
+
+class Dog
+{
+public:
+	Dog() = default;
+	Dog(std::string_view name_param, std::string_view breed_param, unsigned int age_param);
+
+	// Getters
+	std::string_view get_name();
+	std::string_view het_breed();
+	unsigned int get_age();
+
+	// Setters
+	void set_name(std::string_view name_param);
+	void set_breed(std::string_view breed_param);
+	void set_age(unsigned int age_param);
+
+	// Utility functions
+	void print_info();
+
+private:
+	std::string_view m_name;
+	std::string_view m_breed;
+	unsigned int m_age;
+};
+
