@@ -32,6 +32,21 @@ public:
 	double* get_x() const { return x; }
 	double* get_y() const { return y; }
 
+	// Getters for steal the data
+	double* steal_x()
+	{
+		double* new_x = x;
+		x = nullptr;
+		return new_x;
+	}
+
+	double* steal_y()
+	{
+		double* new_y = y;
+		y = nullptr;
+		return new_y;
+	}
+
 	//Utilities
 	void print_info()const {
 		std::cout << "Point [ x : " << *x << ", y: " << (*y) << "]" << std::endl;

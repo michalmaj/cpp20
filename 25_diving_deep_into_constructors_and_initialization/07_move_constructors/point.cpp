@@ -19,10 +19,18 @@ Point::Point(const Point& source_point)
 
 
 // Move constructor
+//Point::Point(Point&& source_point)
+//	: x(source_point.get_x()),
+//	  y(source_point.get_y())
+//{
+//	source_point.invalidate();
+//	std::cout << "Move constructor\n";
+//}
+
+// We can also use a stealing methods
 Point::Point(Point&& source_point)
-	: x(source_point.get_x()),
-	  y(source_point.get_y())
+	: x(source_point.steal_x()),
+	  y(source_point.steal_y())
 {
-	source_point.invalidate();
 	std::cout << "Move constructor\n";
 }
