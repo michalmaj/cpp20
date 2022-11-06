@@ -48,5 +48,5 @@ Person::Person(const Person& source_p)
 // Destructor
 Person::~Person()
 {
-	delete age;
+	delete age; // Make sure that we are not leaking memory
 }
