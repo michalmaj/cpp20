@@ -31,7 +31,7 @@ public:
 
 	void print_info() const
 	{
-		std::cout << "Point  [ &m_x : " << &m_x << ", &m_y : " << &m_y << "]" << std::endl;
+		std::cout << "Point  [m_x : " << m_x << ", m_y : " << m_y << "]" << std::endl;
 	}
 
 public:
