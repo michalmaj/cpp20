@@ -20,8 +20,9 @@ int main()
 
 	std::cout << "\n=================================\n" << std::endl;
 
+	//// Not reachable from this place
 	//some_other_function(); // For now this function has internal linkage
-	some_function();
+	//some_function(); // This function is wrapped around anonymous namespece in other translation unit 
 
 	return 0;
 }
