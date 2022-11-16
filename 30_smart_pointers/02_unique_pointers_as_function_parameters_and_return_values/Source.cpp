@@ -72,5 +72,10 @@ int main()
 
 	p_dog3->print_dog();
 
+	std::cout << "\n===================================\n\n";
+
+	
+	get_unique_ptr()->print_dog();
+
 	return 0;
 }
