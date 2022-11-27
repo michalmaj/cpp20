@@ -27,6 +27,7 @@ int main()
 
 	print("John");
 	do_something(print);
+
 	std::cout << print("Snow", "John") << std::endl;
 
 
