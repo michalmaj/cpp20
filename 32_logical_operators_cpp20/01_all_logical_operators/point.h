@@ -16,7 +16,7 @@ class Point
 
 public:
 	Point() = default;
-	Point(double x, double y) : m_x(x), m_y(y){}
+	Point(double x, double y) : m_x(x), m_y(y) {}
 	~Point() = default;
 
 	double length() const;
