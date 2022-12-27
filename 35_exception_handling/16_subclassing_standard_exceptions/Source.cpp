@@ -9,7 +9,7 @@ public:
 	virtual const char* what() const noexcept override
 	{
 		
-		return"divide by zero detected";
+		return message.c_str();
 	}
 
 	int get_a() const
@@ -26,6 +26,7 @@ public:
 private:
 	int m_a{};
 	int m_b{};
+	std::string message{ std::format("divide by zero detected, dividing {} by {}", m_a, m_b) };
 };
 
 int divide(int a, int b)
@@ -44,15 +45,15 @@ int main()
 	}
 	catch (std::exception& ex)
 	{
-		// We know that the thrown exception contains a DivideByZeroException
-		// part do ws can downcast safely and call non virtual functions
-		DivideByZeroException* d_z = dynamic_cast<DivideByZeroException*>(&ex);
-		if(d_z)
-		{
-			std::cout << ex.what() << ": dividing " << d_z->get_a() << " by " <<
-				d_z->get_b() << std::endl;
-		}
-
+		//// We know that the thrown exception contains a DivideByZeroException
+		//// part do ws can downcast safely and call non virtual functions
+		//DivideByZeroException* d_z = dynamic_cast<DivideByZeroException*>(&ex);
+		//if(d_z)
+		//{
+		//	std::cout << ex.what() << ": dividing " << d_z->get_a() << " by " <<
+		//		d_z->get_b() << std::endl;
+		//}
+		std::cout << ex.what() << std::endl;
 	}
 
 	return 0;
