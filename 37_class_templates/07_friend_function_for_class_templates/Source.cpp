@@ -12,7 +12,9 @@ void some_func(TemplateClass<T>); // This function is a template function becaus
 template <typename T>
 class TemplateClass
 {
-	friend void some_func<T>(TemplateClass<T> param);
+	// Both version of this friend is working well
+	friend void some_func<>(TemplateClass<T> param);
+	//friend void some_func<T>(TemplateClass<T> param);
 
 public:
 	explicit TemplateClass() = default;
