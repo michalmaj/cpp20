@@ -56,8 +56,8 @@ int main()
 	//static_assert(std::same_as<Dog, Cat>); // Fail
 
 	// std::destructible
-	static_assert(std::destructible<Dog>); // Success
-	static_assert(std::destructible<Cat>); // Fail
+	//static_assert(std::destructible<Dog>); // Success
+	//static_assert(std::destructible<Cat>); // Fail
 
 
 	return 0;
