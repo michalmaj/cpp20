@@ -94,5 +94,6 @@ int main()
 	// Custom functor
 	std::cout << "greater int: " << get_best(ints, greater_int_custom_functor) << std::endl;
 
+
 	return 0;
 }
