@@ -205,6 +205,76 @@ int main()
 	items.erase(items.begin() + 1, items.begin() + 4);
 	print_collection(items);
 
+	//Emplace_back
+	std::cout << std::endl;
+	std::cout << "emplace_back : " << std::endl;
+	print_collection(items);
+
+	items.emplace_back(10, 10); // equivalent to items.emplace(items.end() , 10,10);
+	items.emplace_back(10, 11);
+	items.emplace_back(10, 12);
+
+	/*
+	//The above is equivalent to the code below.
+	items.emplace(items.end() , 10,10);
+	items.emplace(items.end() , 10,11);
+	items.emplace(items.end() , 10,12);
+	*/
+
+	print_collection(items);
+
+
+
+
+	//Pop back
+	std::cout << std::endl;
+	std::cout << "pop_back : " << std::endl;
+	print_collection(items);
+
+	items.pop_back();
+
+	print_collection(items);
+
+	//Resize
+	std::cout << std::endl;
+	std::cout << "resize (Before) : " << std::endl;
+	print_collection(items);
+	std::cout << "items size : " << items.size() << std::endl;
+	std::cout << "items capacity : " << items.capacity() << std::endl;
+
+	items.resize(11);// Pay attention on the default constructors being called
+
+	print_collection(items);
+	std::cout << "after resize : " << std::endl;
+	std::cout << "items size : " << items.size() << std::endl;
+	std::cout << "items capacity : " << items.capacity() << std::endl;
+
+
+
+	//Swap
+	std::cout << std::endl;
+	std::cout << "swap : " << std::endl;
+
+
+	std::vector<Item> other_items = { Item(22),Item(33),Item(44) };
+
+	std::cout << "items : ";
+	print_collection(items);
+
+	std::cout << "other_items : ";
+	print_collection(other_items);
+
+	//items.swap(other_items);
+	other_items.swap(items);
+
+	std::cout << "after swap : " << std::endl;
+
+	std::cout << "items : ";
+	print_collection(items);
+
+	std::cout << "other_items : ";
+	print_collection(other_items);
+
 
 	return 0;
 }
