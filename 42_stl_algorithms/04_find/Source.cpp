@@ -27,6 +27,8 @@ int main()
 	if (odd_n_position != std::end(collection))
 		std::cout << "collection contains at least one odd number: " << *odd_n_position <<
 		" at index: " << odd_n_position - std::begin(collection) << std::endl;
+	else
+		std::cout << "collection does not contain any odd number" << std::endl;
 
 
 
