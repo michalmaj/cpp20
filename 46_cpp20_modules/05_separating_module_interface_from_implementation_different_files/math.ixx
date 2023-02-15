@@ -1,7 +1,6 @@
 module;
 
 // Global module fragment
-#include <cstring> // C function includes must show up here
 //#include <iostream> // Non C function includes can also be imported
 
 export module math; // Module declaration

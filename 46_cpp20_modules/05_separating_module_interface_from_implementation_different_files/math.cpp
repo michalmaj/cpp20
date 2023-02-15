@@ -1,5 +1,7 @@
 module;
 
+#include <cstring> // C function includes must show up here
+
 module math;
 
 // Implementation
